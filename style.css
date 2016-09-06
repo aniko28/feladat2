@@ -1,7 +1,166 @@
-.header h1 {
-    background-color: #066fa6;
-    color: #c9d4db;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
     line-height: 100px;
-    font-family: serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* INNENTĹL KEZDJ DOLGOZNI! Ami ez elĹtt van, az a css reset! */
+
+body {
+    font-family: Serif;
+    font-size: 24px;
+}
+
+.wrapper {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.wrapper > .wrapper {
+    width: 800px;
+    margin: 0;
+}
+
+.header {
+    background: #066fa6;
+    color: #c9d4db;
+    height: 100px;
+}
+
+.header h1 {
     font-size: 45px;
+    line-height: 16px;
+    float: left;
+}
+
+.header .nav {
+    font-family: sans-serif;
+    font-size: 16px;
+    float: right;
+    margin-top: 4px;
+}
+
+.header a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.header .nav li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.top {
+    background: #eff6e7;
+    padding: 12px 0 24px 0;
+}
+
+.top h2 {
+    font-size: 26px;
+    line-height: 76px;
+    font-weight: bold;
+}
+
+.top .button {
+    float: right;
+    font-family: sans-serif;
+    font-size: 16px;
+    background: #5580b2;
+    border: 1px solid #3f628b;
+    color: #c9d4db;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    margin: 14px 140px 0 0;
+}
+
+.top p {
+    font-size: 19px;
+    line-height: 33px;
+}
+
+.content {
+    padding-top: 12px 24px;
+}
+
+.content h1 {
+    font-size: 26px;
+    margin-bottom: 27px;
+    font-weight: bold;
+}
+
+.content time {
+    font-size: 18px;
+    margin-bottom: 31px;
+    display: block;
+}
+
+.content a {
+    color: #5580b2;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.content p {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 33px;
+}
+
+.content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 27px;
+    line-height: 12px;
+}
+
+.content .links li {
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.content .pager {
+    border-top: 3px dotted #5580b2;
+    padding: 10px 0px;
+    margin-top: 33px;
+    font-size: 17px;
+    margin-bottom: 34px;
+}
+
+.content .pager li:first-child {
+    float: left;
+}
+
+.content .pager li:last-child {
+    float: right;
+}
+
+.clear {
+    clear: both;
 }
